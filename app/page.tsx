@@ -68,8 +68,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="UWorks home">
-          <span className="brand-mark" aria-hidden="true">U</span>
-          <span>UWORKS</span>
+          <img src="/brand/uworks-logo.png" alt="UWorks" width="300" height="107" />
         </a>
         <nav aria-label="Main navigation">
           <a href="#services">Services</a>
@@ -208,7 +207,7 @@ export default function Home() {
       </div>
 
       <footer>
-        <a className="brand footer-brand" href="#top" aria-label="UWorks home"><span className="brand-mark" aria-hidden="true">U</span><span>UWORKS</span></a>
+        <a className="brand footer-brand" href="#top" aria-label="UWorks home"><img src="/brand/uworks-logo.png" alt="UWorks" width="300" height="107" /></a>
         <p>Data, analytics, and integration consulting in Canada.</p>
         <p>© 2026 UWorks. All rights reserved.</p>
       </footer>
