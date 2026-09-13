@@ -65,8 +65,34 @@ export default function Home() {
       <div id="content">
         <section className="hero" id="home">
           <div className="hero-copy">
-            <p>Data & analytics consulting</p>
-            <h1>Make your business data work harder.</h1>
+            <div className="hero-contact" id="contact" aria-label="UWorks contact details">
+              <a className="hero-email" href="mailto:xmu@uworks.ca?subject=UWorks consultation request">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M3 5h18v14H3zM3 6l9 7 9-7" />
+                </svg>
+                <span>xmu@uworks.ca</span>
+              </a>
+              <a href="tel:+16478543326">
+                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M7 3H4a1 1 0 0 0-1 1c0 9.39 7.61 17 17 17a1 1 0 0 0 1-1v-3l-5-2-1.5 2.5a15.8 15.8 0 0 1-8-8L9 8 7 3Z" />
+                </svg>
+                <span>(647) 854-3326</span>
+              </a>
+              <div className="social-links hero-social" aria-label="UWorks social profiles">
+                <a href="https://github.com/muxingyuan" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2.23c-3.23.7-3.91-1.37-3.91-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.72 1.27 3.39.97.1-.75.4-1.27.74-1.56-2.58-.29-5.29-1.29-5.29-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18A10.97 10.97 0 0 1 12 6.11c.98 0 1.95.13 2.87.39 2.19-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.72 5.4-5.31 5.69.42.36.79 1.07.79 2.16v3.24c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .7Z" />
+                  </svg>
+                  <span>github.com/muxingyuan</span>
+                </a>
+                <a href="https://www.linkedin.com/in/xingyuanmu/" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13Zm1.78 13.04H3.54V8.98H7.1v11.47Z" />
+                  </svg>
+                  <span>linkedin.com/in/xingyuanmu</span>
+                </a>
+              </div>
+            </div>
           </div>
           <ConsultationConcept />
         </section>
@@ -98,35 +124,32 @@ export default function Home() {
         </section>
 
         <section className="about" id="about" aria-labelledby="about-title">
-          <div>
+          <img
+            className="about-photo"
+            src="/images/UTF-8_DSC6131small.jpg"
+            alt="Xingyuan Mu, founder of UWorks"
+            width="2250"
+            height="3150"
+            loading="lazy"
+          />
+          <div className="about-content">
             <p>About</p>
             <h2 id="about-title">Clear thinking.<br />Useful systems.</h2>
-          </div>
-          <div className="about-copy">
-            <p>
-              UWorks helps organizations solve complex data challenges with practical,
-              maintainable solutions. Led by Xingyuan, we work directly with clients from
-              planning and architecture through implementation and support.
-            </p>
-            <p>
-              Our focus is simple: technology that answers real business questions and
-              works reliably for the people who use it.
-            </p>
+            <div className="about-copy">
+              <p>
+                Xingyuan is a good hand in automation around TruckMate, end-to-end Business
+                Intelligence building.
+              </p>
+              <p>
+                Her previous employers and current clients appreciate her responsibility,
+                reliability, quick and neat deliverables.
+              </p>
+              <p>She speaks English, French and Chinese.</p>
+              <p>She is a walker, gardener and piano learner.</p>
+            </div>
           </div>
         </section>
 
-        <section className="contact" id="contact" aria-labelledby="contact-title">
-          <p>Contact</p>
-          <h2 id="contact-title">Let’s talk about your data.</h2>
-          <a className="button button-light" href="mailto:xmu@uworks.ca?subject=UWorks consultation request">xmu@uworks.ca</a>
-          <div className="contact-details">
-            <a href="tel:+16478543326">(647) 854-3326</a>
-            <a href="https://www.linkedin.com/in/xingyuanmu/" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            <address>9560 Markham Road, Unit 316<br />Markham, Ontario L6E 0T9</address>
-          </div>
-        </section>
       </div>
 
       <footer>
